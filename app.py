@@ -557,7 +557,7 @@ if convert_btn:
         docx_bytes = build_docx(song_data)
 
     title_slug = re.sub(r"[^a-zA-Z0-9]+", "_", song_data.get("title", "song")).lower()
-    filename   = f"{title_slug}_space_saver_extended.docx"
+    filename   = f"{title_slug}_Keiths_Tab.docx"
 
     st.markdown('<div class="success-box">✅ Conversion complete! Download your chart below.</div>',
                 unsafe_allow_html=True)

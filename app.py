@@ -57,12 +57,12 @@ st.markdown("""
 
 # ─── Header ─────────────────────────────────────────────────────────────────
 
-st.markdown('<p class="main-title">🎸 Space Saver Extended</p>', unsafe_allow_html=True)
-st.markdown('<p class="subtitle">Guitar Tab Converter — compact gig-ready chord charts</p>', unsafe_allow_html=True)
+st.markdown('<p class="main-title">🎸 Keith's Tab Maker</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Guitar Tab Converter — Make Charts Like Marc's</p>', unsafe_allow_html=True)
 
 with st.expander("ℹ️ What does this converter do?"):
     st.markdown("""
-**Space Saver Extended** converts guitar tab PDFs into compact `.docx` chord charts optimised for live performance:
+**Keith's Tab Maker** converts guitar tab PDFs into compact `.docx` chord charts optimised for live performance:
 
 | Feature | Value |
 |---|---|

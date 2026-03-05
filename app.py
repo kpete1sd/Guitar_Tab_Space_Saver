@@ -36,7 +36,7 @@ from docx.oxml import OxmlElement
 # ─── Page config ────────────────────────────────────────────────────────────
 
 st.set_page_config(
-    page_title="Space Saver Extended — Guitar Tab Converter",
+    page_title="Keith's Guitar Tab Converter",
     page_icon="🎸",
     layout="centered",
 )

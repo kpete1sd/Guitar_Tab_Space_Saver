@@ -1,7 +1,7 @@
 """
-Space Saver Extended — Guitar Tab Converter
+Keiths Guitar Tab Converter
 ============================================
-Upload a guitar tab PDF and receive a Space Saver Extended .docx:
+Upload a guitar tab PDF and receive a Keiths Guitar Tab .docx:
   • 14pt Times New Roman Bold throughout
   • 1.3 line spacing
   • Consecutive chord/lyric pairs merged side-by-side
@@ -246,7 +246,7 @@ def _add_blank(doc):
 
 def build_docx(song: dict) -> bytes:
     """
-    Build the Space Saver Extended .docx from a structured song dict.
+    Build the Keiths Tab .docx from a structured song dict.
 
     Expected song dict shape:
     {
@@ -352,7 +352,7 @@ def build_docx(song: dict) -> bytes:
 
 # ─── Claude prompts ──────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT_CUES = """You are an expert guitar tab formatter. Your job is to parse a guitar tab PDF and return a structured JSON object that will be used to build a Space Saver Extended chord chart.
+SYSTEM_PROMPT_CUES = """You are an expert guitar tab formatter. Your job is to parse a guitar tab PDF and return a structured JSON object that will be used to build a Keiths Tab Extended chord chart.
 
 RULES FOR PARSING:
 1. Extract the song title, artist, tuning/key, and any performance notes.
@@ -403,7 +403,7 @@ OUTPUT FORMAT — return ONLY valid JSON, no markdown fences, no explanation:
 }"""
 
 
-SYSTEM_PROMPT_FULL_LYRICS = """You are an expert guitar tab formatter. Your job is to parse a guitar tab PDF and a set of user-provided lyrics, then return a structured JSON object for a Space Saver Extended chord chart.
+SYSTEM_PROMPT_FULL_LYRICS = """You are an expert guitar tab formatter. Your job is to parse a guitar tab PDF and a set of user-provided lyrics, then return a structured JSON object for a Keiths Tab Extended chord chart.
 
 RULES FOR PARSING:
 1. Extract the song title, artist, tuning/key, and any performance notes from the PDF.
@@ -522,7 +522,7 @@ ready_to_convert = not full_lyrics_mode or user_lyrics.strip()
 col1, col2 = st.columns([2, 1])
 with col1:
     convert_btn = st.button(
-        "🎵 Convert to Space Saver Extended",
+        "🎵 Convert to Keiths Tab Extended",
         type="primary",
         use_container_width=True,
         disabled=not ready_to_convert
@@ -594,7 +594,7 @@ if convert_btn:
 
 st.markdown("---")
 st.markdown(
-    "<small>Space Saver Extended • 14pt Times New Roman Bold • 1.3 spacing • "
+    "<small>Keiths Tab Extended • 14pt Times New Roman Bold • 1.3 spacing • "
     "Side-by-side line merging • Extended cues or full lyrics • Song info after diagrams</small>",
     unsafe_allow_html=True,
 )

@@ -62,21 +62,18 @@ st.markdown('<p class="subtitle">Guitar Tab Converter — Make Charts Like Marcs
 
 with st.expander("ℹ️ What does my converter do?"):
     st.markdown("""
-**Keiths Tab Maker** converts guitar tab PDFs into compact `.docx` chord charts optimised for live performance:
+**Keiths Tab Maker** converts guitar tab PDFs into compact `.docx` chord charts for gigs:
 
 | Feature | Value |
 |---|---|
-| Font | Times New Roman Bold, 14pt |
-| Line spacing | 1.3 |
+| File format | Outputs a Word file so you can edit |
+| Bigger Font and More Space | 14 point double space |
 | Lyric mode | Extended cues (5–6 words) **or** your own full lyrics |
 | Line merging | Consecutive chord/lyric pairs merged side-by-side |
 | Chord notation | `ChordName-Beats` (e.g. `Am-4`, `G7sus4-2`) |
-| Non-standard chord diagrams | Included at bottom |
 | Artist / Tuning / Notes | After chord diagrams |
 
-The side-by-side merging reduces vertical space by ~50% vs. a standard chart, while keeping chords and cues clearly readable.
-
-**Lyric modes:**
+**Two Lyric modes:**
 - **Extended cues** — Claude automatically generates the first 5–6 words of each line as a memory prompt
 - **Full lyrics** — paste the complete lyrics from your own licensed source and they will be placed exactly as written
 """)
